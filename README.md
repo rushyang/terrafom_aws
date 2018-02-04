@@ -1,5 +1,5 @@
 # terrafom_aws
-### This is an initial attempt at Terraform with AWS Provider, which does following tasks:
+### This is an attempt at Terraform with AWS Provider, which does following tasks:
 1. Create 2 EC2 instances using an autoscaling group. EC2 instances should have S3 Full Access Instance Role assigned.
 2. Create a private bucket (Bucket name is given at the time of terraform apply - either using command line variable or via user-interaction)
 
