@@ -4,7 +4,7 @@ Initial attempt at Terraform with AWS provider
 1. Create 2 EC2 instances using an autoscaling group. EC2 instances should have S3 Full Access Instance Role assigned.
 2. Create a private bucket (Bucket name is given at the time of terraform apply - either using command line variable or via user-interaction)
 
-### AWS Architecture/Interactions through Terraform (according to sequence)
+### AWS Architecture/Interactions through Terraform file:site.tf (Explained according to architectural sequence)
 1. IAM Role Creation with STS Assume Role through resource: aws_iam_role
 2. Creation of "IN-LINE" IAM Policy through JSON format using "aws_iam_role_policy" and attach it to IAM
 3. Creation of "Instance Role" using "aws_iam_instance_profile" and assigning previously created iam_role
@@ -16,5 +16,5 @@ Initial attempt at Terraform with AWS provider
 
 That's it!
 
--Rushyang Darji
-rushyang01@gmail.com 
+### -Rushyang Darji
+### rushyang01@gmail.com 
